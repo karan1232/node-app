@@ -67,3 +67,8 @@ export const getVehicleBrandsController = async(req, res) => {
     res.status(200).send({success:true});
   } catch (error) {console.log(error)}
 };
+
+export const bookVehicleService = async(req,res) => {
+  // const user = req.user._id;
+
+}

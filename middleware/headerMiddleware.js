@@ -4,6 +4,7 @@ export const authorizeApiCall = async (req, res,next) => {
   try {
     const header = req.headers.authorization;
    const decodedUser = await JWT.verify(header,process.env.jsonWebTokenRounds);
+   console.log(decodedUser);
    req.user = decodedUser;
    next();
 

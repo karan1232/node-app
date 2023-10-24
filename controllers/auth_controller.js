@@ -90,13 +90,7 @@ export const loginController = async (req,res) => {
     );
 
     res.status(200).send({
-      success: true,
-      user: {
-        email: userExists.email,
-        address: userExists.address,
-        phone: userExists.phone,
-        name: userExists.name,
-      },token
+      success: true,token
     });
   } catch (error) {
     console.log(error);

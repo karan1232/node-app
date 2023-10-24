@@ -10,4 +10,6 @@ router.get("/get-vehicles",authorizeApiCall,getVehicleList)
 
 router.get("/get/car-brands",authorizeApiCall,getVehicleBrandsController)
 
+// router.post("/book/service",authorizeApiCall,)
+
 export default router;
